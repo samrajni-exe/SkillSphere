@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from '../../context/ThemeContext'
 import './CourseDetails.css'
 
-const API = 'http://127.0.0.1:5000/api'
+const API = 'http://127.0.0.1:5055/api'
 
 function CourseDetails() {
   const { theme, toggleTheme } = useTheme()

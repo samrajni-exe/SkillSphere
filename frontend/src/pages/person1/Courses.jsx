@@ -26,7 +26,7 @@ function Courses() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/courses/')
+    fetch('http://127.0.0.1:5055/api/courses/')
       .then(response => {
         if (!response.ok) throw new Error('Could not load courses')
         return response.json()

@@ -28,7 +28,7 @@ function Profile() {
       return
     }
 
-    fetch(`http://127.0.0.1:5055/api/profile/${user.id}`)
+    fetch(`https://skillsphere-api-2026.onrender.com/api/profile/${user.id}`)
       .then(response => {
         if (!response.ok) throw new Error('Could not load profile')
         return response.json()
@@ -62,7 +62,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:5055/api/profile/${user.id}`,
+        `https://skillsphere-api-2026.onrender.com/api/profile/${user.id}`,
         {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },

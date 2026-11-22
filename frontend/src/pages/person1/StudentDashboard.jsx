@@ -15,11 +15,11 @@ function StudentDashboard() {
     }
 
     Promise.all([
-      fetch(`http://127.0.0.1:5055/api/dashboard/${user.id}`).then(res => {
+      fetch(`https://skillsphere-api-2026.onrender.com/api/dashboard/${user.id}`).then(res => {
         if (!res.ok) throw new Error('Dashboard loading failed')
         return res.json()
       }),
-      fetch(`http://127.0.0.1:5055/api/courses/student/${user.id}/enrolled`).then(res => {
+      fetch(`https://skillsphere-api-2026.onrender.com/api/courses/student/${user.id}/enrolled`).then(res => {
         if (!res.ok) throw new Error('Courses loading failed')
         return res.json()
       })

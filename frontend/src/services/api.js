@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:5055/api";
+const API_BASE_URL = "https://skillsphere-api-2026.onrender.com/api";
 
 async function apiRequest(endpoint, options = {}) {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {

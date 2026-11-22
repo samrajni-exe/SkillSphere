@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from '../../context/ThemeContext'
 import './CourseDetails.css'
 
-const API = 'http://127.0.0.1:5055/api'
+const API = 'https://skillsphere-api-2026.onrender.com/api'
 
 function CourseDetails() {
   const { theme, toggleTheme } = useTheme()
